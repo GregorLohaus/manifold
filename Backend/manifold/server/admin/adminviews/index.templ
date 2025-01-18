@@ -1,0 +1,24 @@
+package adminviews
+
+import "github.com/gofiber/fiber/v2"
+
+templ Index(c *fiber.Ctx) {
+  <!DOCTYPE html>
+  <html>
+    <head> 
+      @Htmx(c) 
+      @Tailwind(c) 
+    </head>
+    <body class="bg-zinc-900 h-screen">
+      @Nav(c)
+      <div class="flex border-solid border-zinc-200 border justify-center h-full" id="content">
+          if 1 != c.Locals(ADMIN_LOGGED_IN) {
+            @Login(c)  
+          } else {
+            @Query(c)
+          }
+      </div>
+    </body>
+  </html>
+}
+

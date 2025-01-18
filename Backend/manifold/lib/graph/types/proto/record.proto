@@ -1,0 +1,29 @@
+syntax = "proto3";
+option go_package = "./proto";
+enum IOType {
+  NIL = 0;
+	NUMBER = 1;
+  STRING = 2;
+  BOOL = 3;
+  MAP = 4;
+  SLICE = 5;
+}
+
+message Value {
+  IOType io_type = 1;
+  oneof value {
+    double number = 2;
+    string string = 3;
+    bool boolean = 4;
+    MapValue map_value = 5;
+    ValueSlice slice_value = 6;
+  }
+}
+
+message MapValue {
+  map<string,Value> map_value = 1;
+}
+
+message ValueSlice {
+  repeated Value slice_value = 1;
+}

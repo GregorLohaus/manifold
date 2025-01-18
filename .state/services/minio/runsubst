@@ -1,0 +1,3 @@
+#!/bin/sh -e 
+exec 2>&1 
+exec minio server --console-address $MINIO_ADDRESS:$MINIO_CONSOLE_PORT --address $MINIO_ADDRESS:$MINIO_PORT $HOME/.state/minio 

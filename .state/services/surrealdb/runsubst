@@ -1,0 +1,4 @@
+#!/bin/sh -e 
+exec 2>&1 
+exec surreal start --log trace --user $SURREAL_DB_USER --pass $SURREAL_DB_PASSWORD --bind $SURREAL_DB_ADDRESS:$SURREAL_DB_PORT file://$HOME/.state/surrealdb/database.db
+

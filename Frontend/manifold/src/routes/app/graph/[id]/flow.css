@@ -1,0 +1,49 @@
+.svelte-flow {
+  --xy-edge-stroke-default: hsl(var(--foreground) / var(--tw-text-opacity)) !important;
+  --xy-edge-stroke-width-default: 1 !important;
+  --xy-edge-stroke-selected-default: #555 !important;
+  --xy-connectionline-stroke-default: #b1b1b7 !important;
+  --xy-connectionline-stroke-width-default: 1 !important;
+  --xy-attribution-background-color-default: rgba(255, 255, 255, 0.5) !important;
+  --xy-minimap-background-color-default: hsl(var(--background) / 0.8) !important;
+  --xy-minimap-mask-background-color-default: hsl(var(--background) / 0.5) !important;
+  --xy-minimap-mask-stroke-color-default: transparent !important;
+  --xy-minimap-mask-stroke-width-default: 1 !important;
+  --xy-minimap-node-background-color-default: hsl(var(--primary) / var(--tw-bg-opacity)) !important;
+  --xy-minimap-node-stroke-color-default: transparent !important;
+  --xy-minimap-node-stroke-width-default: 2 !important;
+  --xy-background-color-default: transparent !important;
+  --xy-background-pattern-dots-color-default: #91919a !important;
+  --xy-background-pattern-lines-color-default: #eee !important;
+  --xy-background-pattern-cross-color-default: #e2e2e2 !important;
+  --xy-node-color-default: inherit !important;
+  --xy-node-border-default: 1px solid hsl(var(--primary) / var(--tw-bg-opacity)) !important;
+  --xy-node-background-color-default: hsl(var(--background) / var(--tw-bg-opacity)) !important;
+  --xy-node-group-background-color-default: hsl(var(--muted) / var(--tw-bg-opacity)) !important;
+  --xy-node-boxshadow-hover-default: 0 1px 4px 1px rgba(0, 0, 0, 0.08) !important;
+  --xy-node-boxshadow-selected-default: 0 0 0 0.5px #1a192b !important;
+  --xy-node-border-radius-default: 3px !important;
+  --xy-handle-background-color-default: hsl(var(--background) / var(--tw-bg-opacity)) !important;
+  --xy-handle-border-color-default: hsl(var(--primary) / var(--tw-border-opacity)) !important;
+  --xy-selection-background-color-default: rgba(0, 89, 220, 0.08) !important;
+  --xy-selection-border-default: 1px dotted rgba(0, 89, 220, 0.8) !important;
+  --xy-controls-button-background-color-default: hsl(var(--background) / var(--tw-bg-opacity)) !important;
+  --xy-controls-button-background-color-hover-default: #f4f4f4 !important;
+  --xy-controls-button-color-default: hsl(var(--primary) / var(--tw-bg-opacity)) !important;
+  --xy-controls-button-color-hover-default: hsl(var(--secondary) / var(--tw-bg-opacity)) !important;
+  --xy-controls-button-border-color-default: hsl(var(--border) / var(--tw-border-opacity)) !important;
+  --xy-controls-box-shadow-default: 0 0 2px 1px rgba(0, 0, 0, 0.08) !important;
+  --xy-edge-label-background-color-default: hsl(var(--secondary) / var(--tw-bg-opacity)) !important;
+  --xy-edge-label-color-default: hsl(var(--primary) / var(--tw-bg-opacity)) !important;
+  --xy-resize-background-color-default: #3367 !important;
+}
+
+.svelte-flow__minimap-svg {
+  border: hsl(var(--primary) / 0.8) 1px solid;
+  border-radius: 4px;
+}
+
+.svelte-flow__handle {
+  height: 10px !important;
+  width: 10px !important;
+}

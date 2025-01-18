@@ -1,0 +1,11 @@
+package adminviews
+
+import "github.com/gofiber/fiber/v2"
+
+templ Login(c *fiber.Ctx) {
+  <form hx-post="/admin/api/login" hx-trigger="submit" class="flex flex-col gap-x-10 gap-y-3 justify-center">
+    <label class="text-zinc-200" for="password"> Password: </label>  
+    <input name="password" type="password"/> 
+    <button class="bg-zinc-200" type="submit"> Login </button>
+  </form>
+}

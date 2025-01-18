@@ -1,0 +1,16 @@
+package adminviews
+
+import "github.com/gofiber/fiber/v2"
+
+templ Nav(c *fiber.Ctx) {
+  if 1 == c.Locals(ADMIN_LOGGED_IN) {
+    <div class="flex border-solid border-zinc-200 border h-10 text-zinc-200"> 
+      <div class="flex justify-center items-center px-3 h-full outline outline-1 outline-solid outline-zinc-200 bg-zinc-200 text-zinc-900">
+        @Logo(c)
+      </div>
+      @NavItem("Query","/admin/query")
+      @NavItem("Infotree","/admin/infotree")
+      @NavItem("Databases","/admin/databases")
+    </div>
+  }	
+}

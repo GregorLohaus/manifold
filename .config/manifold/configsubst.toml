@@ -12,7 +12,7 @@ SSL = false
 
 [Server]
 FrontendProtocol = "http"
-FrontendHost = "127.0.0.1"
+FrontendHost = "localhost"
 FrontendPort = 5173
 Port = 8080
 AdminPasswordHash = '$MANIFOLD_ADMIN_PASSWORD_HASH'
